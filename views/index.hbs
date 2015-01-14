@@ -1,2 +1,13 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div>
+{{#each data.response}}
+	<h4>{{ this.title }}</h4>
+	{{#each this.clips }}
+		<img src="{{ this.assets.web_460.url }}" />
+	{{/each }}
+	<div class="maker">
+		<img src="{{ this.maker.avatar.icon.url }}" />
+		<span>{{ this.maker.nickname }}</span>
+	</div>
+{{/each}}
+</div>
