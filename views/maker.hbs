@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+<section>
+	<div class="maker">
+		<h1>{{ data.response.0.maker.nickname }}</h1>
+	</div>
+	<div class="projects">
+	{{#each data.response}}
+		<span class="project">
+			<span>{{ this.title }}</span>
+			<img src="{{ this.clips.0.assets.web_220.url }}" />
+		</span>
+	{{/each}}
+	</div>
+</section>

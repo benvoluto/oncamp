@@ -1,13 +1,14 @@
 <h1>{{title}}</h1>
-<div>
-{{#each data.response}}
-	<h4>{{ this.title }}</h4>
-	{{#each this.clips }}
-		<img src="{{ this.assets.web_460.url }}" />
-	{{/each }}
-	<div class="maker">
-		<img src="{{ this.maker.avatar.icon.url }}" />
-		<span>{{ this.maker.nickname }}</span>
+
+<section class="featured">
+	{{#each data.response}}
+	<div class="item">
+		<a href="maker/{{ this.maker.url }}"><img src="{{ this.clips.0.assets.web_460.url }}" /></a>
+		<div class="meta">
+			<a href="maker/{{ this.maker.url }}"><img src="{{ this.maker.avatar.small.url }}" /></a>
+			<a href="maker/{{ this.maker.url }}" class="title">{{ this.title }}</a>
+			<a href="maker/{{ this.maker.url }}" class="maker">{{ this.maker.nickname }}</a>
+		</div>
 	</div>
-{{/each}}
-</div>
+	{{/each}}
+</section>
