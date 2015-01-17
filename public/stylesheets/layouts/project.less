@@ -1,0 +1,345 @@
+.project {
+  font-size: 16px;
+
+  header {
+    background-color: white;
+    padding: 40px 0;
+
+    section {
+      width: 940px;
+      margin: 0 auto;
+    }
+
+    .skill {
+      .badge {
+        display: inline-block;
+        width: 50px;
+        height: 60px;
+        background: url('../../images/back-badge.svg');
+        background-size: 50px auto;
+        position: relative;
+        vertical-align: middle;
+
+        &:before {
+          content: "";
+          width: 50px;
+          height: 60px;
+          display: inline-block;
+          position: absolute;
+          background: url('http://d1973c4qjhao9m.cloudfront.net/patches/makeupartist_icon.png');
+          background-position: center;
+          background-size: 47px;
+        }
+      }
+
+      .name {
+        display: inline-block;
+        padding-left: 10px;
+        color: #a3aaad;
+        vertical-align: middle;
+      }
+
+      &.two-d-animation .badge:before {
+        background: url('http://d1973c4qjhao9m.cloudfront.net/patches/animator_icon.png');
+        background-position: center;
+        background-size: 48px;
+      }
+
+      &.illustrator .badge:before {
+        background: url('http://d1973c4qjhao9m.cloudfront.net/patches/illustrator_icon.png');
+        background-position: center;
+        background-size: 48px;
+      }
+
+      &.musician .badge:before {
+        background: url('//d1973c4qjhao9m.cloudfront.net/patches/musician_icon.png');
+        background-position: center;
+        background-size: 48px;
+      }
+    }
+
+    .info {
+      width: 300px;
+      height: 414px;
+      float: right;
+      color: #c4cbcc;
+      position: relative;
+
+      h1 {
+        color: #414c52;
+        font-size: 2em;
+        line-height: 1.125em;
+        margin: 0.5em 0 0.4em 13px;
+      }
+
+      .timestamp {
+        font-size: 0.88em;
+        display: inline-block;
+        margin: 0 0 1em 13px;
+      }
+
+      .skill {
+        margin-bottom: 8px;
+      }
+    }
+
+    .maker {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      line-height: 1em;
+      
+      .avatar {
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+
+        img {
+          border-radius: 4px;
+        }
+      }
+
+      .nickname {
+        display: inline-block;
+        font-size: 1.1em;
+        vertical-align: middle;
+        margin-left: 0.5em;
+        color: #2ca1db;
+      }
+    }
+
+    .media {
+      display: inline-block;
+      width: 620px;
+      position: relative;
+
+      img {
+        width: 100%;
+        border-radius: 6px;
+        z-index: 0;
+      }
+
+      .favorite {
+        display: inline-block;
+        position: absolute;
+        width: 55px;
+        height: 46px;
+        bottom: 15px;
+        right: 18px;
+        background: url('../../images/button-favorite.svg');
+        background-size: 55px auto;
+        background-position: 0 0;
+        z-index: 10;
+
+        &:hover {
+          background-position: 0 -48px;
+        }
+      }
+    }
+  }
+
+  .interactions {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+
+    section {
+      width: 940px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-family: 'apex_roundedmedium', sans-serif;
+      font-size: 1.5em;
+      color: #414c52;
+      margin-bottom: 1em;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        padding-right: 0.7em;
+        vertical-align: middle;
+      }
+    }
+
+    .comments {
+      display: inline-block;
+      vertical-align: top;
+      width: 620px;
+
+      h2:before {
+        background: url('../../images/icon-comment.svg') no-repeat;
+      }
+
+      .comment {
+        margin-bottom: 10px;
+      }
+      
+      .avatar {
+        display: inline-block;
+        position: relative;
+
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 4px;
+        }
+
+        &.mod {
+          &:before {
+            content: "Mod";
+            display: inline-block;
+            box-sizing: border-box;
+            background-color: #00d3a3;
+            color: white;
+            height: 20px;
+            padding: 4px 6px;
+            border-radius: 2px;
+            position: absolute;
+            bottom: -3px;
+            left: 10px;
+            font-size: 0.88em;
+          }
+        }
+      }
+
+      .balloon {
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 9px;
+        width: 480px;
+        min-height: 80px;
+        margin-left: 20px;
+        vertical-align: top;
+        padding: 14px 20px;
+        position: relative;
+
+        &:before {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 24px;
+          height: 22px;
+          left: -12px;
+          top: 0;
+          background: url('../../images/balloon-caret.svg') no-repeat;
+        }
+
+        .nickname {
+          color: #2ca1db;
+        }
+
+        .timestamp {
+          font-family: "Helvetica-Neue", Helvetica, sans-serif;
+          font-size: 0.8em;
+          font-weight: 500;
+          color: #c4cbcc;
+          padding-left: 0.5em;
+        }
+
+        .body {
+          display: block;
+          margin-top: 18px;
+          width: 400px;
+          font-family: "Helvetica-Neue", Helvetica, sans-serif;
+          font-size: 1.1em;
+          color: #536168;
+        }
+
+        .reply {
+          position: absolute;
+          width: 48px;
+          height: 40px;
+          right: 0;
+          bottom: 0;
+          background: url('../../images/icon-reply.svg') no-repeat;
+          background-size: 40px auto;
+          background-position: 0 0;
+
+          &:hover {
+            background-position: 0 -41px;
+          }
+        }
+      }
+
+      form {
+        margin-top: 40px;
+
+        .contain {
+          display: inline-block;
+          position: relative;
+          width: 480px;
+          margin-left: 20px;
+          vertical-align: top;
+
+          &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 24px;
+            height: 22px;
+            left: -12px;
+            top: 0;
+            background: url('../../images/balloon-caret-grey.svg') no-repeat;
+          }
+        }
+
+        textarea {
+          background-color: #e6e6e6;
+          border: 0;
+          display: inline-block;
+          box-sizing: border-box;
+          border-radius: 9px;
+          width: 480px;
+          min-height: 80px;
+          padding: 14px 20px;
+          position: relative;
+          resize: none;
+        }
+      }
+    }
+
+    .favorites {
+      display: inline-block;
+      vertical-align: top;
+      width: 300px;
+      margin-left: 17px;
+
+      h2:before {
+        background: url('../../images/icon-comment.svg') no-repeat;
+      }
+
+      .favorite {
+        display: inline-block;
+        width: 135px;
+        height: 30px;
+        margin: 0 10px 10px 0;
+        white-space: nowrap;
+
+        .avatar {
+          display: inline-block;
+          vertical-align: middle;
+
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 3px;
+          }
+        }
+
+        .nickname {
+          display: inline-block;
+          color: #2ca1db;
+          margin-left: 10px;
+          vertical-align: middle;
+          width: 100px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}

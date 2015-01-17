@@ -23,6 +23,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/maker', maker);
+app.get('/project', function(req, res) {
+    res.render('project', {title: 'Project'});
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
